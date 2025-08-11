@@ -14,7 +14,7 @@ def home():
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=port, debug=True)
 
-BASE_URL = "https://dummyjson.com"
+BASE_URL = "https://dummyjson.com" #the url to consume the api
 @app.route('/products', methods=['GET'])
 def get_products():
     response = requests.get(f"{BASE_URL}/products")
